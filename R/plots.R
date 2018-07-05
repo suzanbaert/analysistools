@@ -3,7 +3,7 @@
 
 #' Generate ggplot 2 colours
 #'
-#' @description Generates the ggplot2 colours so they can be used in other plots
+#' @description Generates the ggplot2 colours so they can be used in other plots. Solution taken from https://stackoverflow.com/questions/8197559/emulate-ggplot2-default-color-palette/8197703#8197703 and added to this package for easy personal use.
 #'
 #' @param n number of colours
 #'
