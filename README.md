@@ -24,7 +24,7 @@ Get the kmeans elbow plot:
 kmeans_elbow(iris[-5])
 ```
 
-<img src="man/figures/README-kmeans_elbow-1.png" width="100%" />
+<img src="man/figures/README-kmeans_elbow-1.png" width="33%" />
 
 Or get a second opinion on the number of clusters via Silhouette analysis. This shows the average silhouette width for each number of clusters.
 
@@ -32,7 +32,7 @@ Or get a second opinion on the number of clusters via Silhouette analysis. This 
 silhouette_plot(iris[-5])
 ```
 
-<img src="man/figures/README-silhouette_plot-1.png" width="100%" />
+<img src="man/figures/README-silhouette_plot-1.png" width="33%" />
 
 <br>
 <hr>
