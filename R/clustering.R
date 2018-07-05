@@ -21,7 +21,7 @@ kmeans_elbow <- function(data, kmax = 10) {
     kmeans_output <- kmeans(data, centers=k, nstart=10)
     wss[k] <- kmeans_output$tot.withinss
   }
-  plot(1:kmax, wss, type = "b", main = "Elbow plot")
+  plot(1:kmax, wss, type = "b", main = "Elbow plot", ylab = "total within-cluster sum of squares")
 }
 
 
@@ -50,5 +50,5 @@ silhouette_plot <- function(data, kmax = 10) {
     silh_output <- cluster::pam(data, k=k)
     silwidth[(k-1)] <- silh_output$silinfo$avg.width
   }
-  plot(2:kmax, silwidth, type = "b", main = "Silhouette plot")
+  plot(2:kmax, silwidth, type = "b", main = "Silhouette plot", ylab = "average silhouette width")
 }
