@@ -4,6 +4,7 @@
 #'
 #' @param data dataframe
 #' @param kmax number of clusters to check
+#' @param nstart number of iterations
 #'
 #' @importFrom stats kmeans
 #' @importFrom graphics plot
@@ -15,10 +16,10 @@
 #' kmeans_elbow(iris[-5])
 
 
-kmeans_elbow <- function(data, kmax = 10) {
+kmeans_elbow <- function(data, kmax = 10, nstart = 10) {
   wss <- 0
   for (k in 1:kmax) {
-    kmeans_output <- kmeans(data, centers=k, nstart=10)
+    kmeans_output <- kmeans(data, centers=k, nstart=nstart)
     wss[k] <- kmeans_output$tot.withinss
   }
   plot(1:kmax, wss, type = "b", main = "Elbow plot", ylab = "total within-cluster sum of squares")

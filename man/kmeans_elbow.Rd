@@ -4,12 +4,14 @@
 \alias{kmeans_elbow}
 \title{Clustering - generate kmeans elbow plot}
 \usage{
-kmeans_elbow(data, kmax = 10)
+kmeans_elbow(data, kmax = 10, nstart = 10)
 }
 \arguments{
 \item{data}{dataframe}
 
 \item{kmax}{number of clusters to check}
+
+\item{nstart}{number of iterations}
 }
 \description{
 Generate the elbow plot for a dataframe to understand the number of clusters requirement. Also called scree plot.
